@@ -1,0 +1,9 @@
+.app-window {
+  width: 400px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px 35px 10px 35px;
+  background-color: #dff9fb;
+  border: 1px solid green;
+  text-align: center;
+}
