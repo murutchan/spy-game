@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./players.page.styles.css";
 
 const PlayersPage = ({
   numOfPlayers,
@@ -48,7 +49,7 @@ const PlayersPage = ({
   const playerRender = () => {
     if (playerNum > numOfPlayers) {
       return (
-        <div className="mt-5">
+        <div className=" player-page mt-5">
           <h3 className="text-danger mb-5">You are all set :)</h3>
           <button
             className="btn btn-outline-primary d-block w-75 ml-5 my-3"
@@ -61,7 +62,7 @@ const PlayersPage = ({
     }
     while (playerNum <= numOfPlayers) {
       return isAnswerShown ? (
-        <div className="mt-5">
+        <div className=" player-page mt-5">
           <h4>
             {showWord[playerNum - 1] === "zayac"
               ? "You are a SPY 🕵🏻‍♂️ , no word for you"
@@ -76,7 +77,7 @@ const PlayersPage = ({
           </button>
         </div>
       ) : (
-        <div className="container mt-5">
+        <div className="container player-page mt-5">
           <h4 className="mb-5">PLAYER--{playerNum}</h4>
 
           <button
