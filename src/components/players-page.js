@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import imgSecret from "./secret.jpg";
 import "./players.page.styles.css";
 
 const PlayersPage = ({
@@ -22,13 +23,12 @@ const PlayersPage = ({
       playerList.push("zayac");
     }
     playerList.sort(() => Math.random() - 0.5);
-    console.log(playerList.sort(() => Math.random() - 0.5));
   };
 
   //use Effect
   useEffect(() => {
     randomPlayerList();
-    console.log(playerList);
+
     setShowWord([...playerList.sort(() => Math.random() - 0.5)]);
   }, []);
 
@@ -62,15 +62,24 @@ const PlayersPage = ({
     }
     while (playerNum <= numOfPlayers) {
       return isAnswerShown ? (
-        <div className=" player-page mt-5">
-          <h4>
+        <div className=" player-page mt-5 ">
+          <h4 className="bg-info border p-3 text-light">
             {showWord[playerNum - 1] === "zayac"
-              ? "You are a SPY 🕵🏻‍♂️ , no word for you"
-              : "Memorize your word: " + showWord[playerNum - 1]}
+              ? `You are a SPY 🕵🏻‍♂️ `
+              : "The Secret word is : 🤐🤐🤐  " + showWord[playerNum - 1]}
           </h4>
+          <img
+            src={imgSecret}
+            alt="secret"
+            width="70%"
+            className="rounded mt-5"
+          />
           <button
             className="btn btn-outline-primary d-block w-50 w-75 ml-5 mt-5"
-            onClick={() => setIsAnswerShown(false)}
+            onClick={(e) => {
+              setIsAnswerShown(false);
+              nextPlayer(e);
+            }}
           >
             {" "}
             OK, got it
@@ -87,13 +96,13 @@ const PlayersPage = ({
             Show the WORD
           </button>
 
-          <button
+          {/* <button
             className="btn btn-outline-primary d-block w-75 ml-5 mt-3"
             onClick={nextPlayer}
           >
             {" "}
             NEXT PLAYER{" "}
-          </button>
+          </button> */}
         </div>
       );
     }

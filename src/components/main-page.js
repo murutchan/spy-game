@@ -25,6 +25,36 @@ const MainPage = () => {
     "skripka",
     "butterfly",
     "break dance",
+    "Zero (number)",
+    "USSR (sovetskiy soyuz)",
+    "Nil river",
+    "Africa",
+    "zebra",
+    "euro (currency)",
+    "Canada goose",
+    "mars",
+    "BMW car",
+    "Iphone 4",
+    "tesla",
+    "frozen yogurt",
+    "UGGs shoes",
+    "IKEA",
+    "DUD' yura",
+    "Sharpie pen",
+    "Camry",
+    "Hong Kong",
+    "chicken tikka masala",
+    "A-studio gruppa",
+    "Dollar",
+    "Sneakers chocolate",
+    "Orbit gum",
+    "Egypt",
+    "Turkey",
+    "Sweden",
+    "ALaska",
+    "Columbia brand",
+    "D&G brand",
+    "french fries",
   ]);
 
   let [currentWord, setCurrentWord] = useState("");
@@ -34,18 +64,6 @@ const MainPage = () => {
 
   let [numOfZayac, setNumOfZayac] = useState(1);
 
-  //RANDOM WORD PICKER
-  // const playerList = [];
-  // const randomPlayerList = () => {
-  //   for (let i = 0; i < numOfPlayers - numOfZayac; i++) {
-  //     playerList.push(currentWord);
-  //   }
-  //   for (let i = 0; i < numOfZayac; i++) {
-  //     playerList.push("zayac");
-  //   }
-  //   playerList.sort(() => Math.random() * 0.5);
-
-  // };
   useEffect(() => {
     let randomNum = Number(Math.floor(Math.random() * (wordsList.length - 1)));
 
@@ -55,9 +73,9 @@ const MainPage = () => {
   //START GAME BUTTON
   const startGame = () => {
     setIsPlayerShown(true);
+    let randomNum = Number(Math.floor(Math.random() * (wordsList.length - 1)));
 
-    console.log("current Word ", currentWord);
-    // randomPlayerList();
+    setCurrentWord(wordsList[randomNum]);
   };
 
   return !isPlayerShown ? (
@@ -71,14 +89,14 @@ const MainPage = () => {
       <hr className="my-5" />
       <h5 className="my-4">Select the number of spies🕵</h5>
       <ZCounter numOfZayac={numOfZayac} setNumOfZayac={setNumOfZayac} />
-      <button className="btn btn-outline-success mt-5 mb-3" onClick={startGame}>
+      <button className="btn btn-danger mt-5 mb-3" onClick={startGame}>
         {" "}
         START THE GAME{" "}
       </button>
       <hr />
       <p className="bg-gray">
         {" "}
-        <em className="text-danger"> RULES OF THE GAME: </em> <br />" Everyone
+        <em className="text-danger "> RULES OF THE GAME: </em> <br />" Everyone
         will be shown one word (exact same word), except the SPY. Its a game
         where you have a spy who doesnt know the secret word. You go one by one
         & tell sth close (synonym) to the secret word. The spy should try to

@@ -6,4 +6,6 @@
   background-color: #dff9fb;
   border: 1px solid green;
   text-align: center;
+  background-image: url("./background.jpg");
+  background-size: cover;
 }
