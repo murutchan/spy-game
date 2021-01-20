@@ -55,6 +55,23 @@ const MainPage = () => {
     "Columbia brand",
     "D&G brand",
     "french fries",
+    "Tetris",
+    "Samovar",
+    "Green tea",
+    "Tom Hanks",
+    "Brad Pitt",
+    "Tarantino",
+    "chess",
+    "polar bear",
+    "crocodile",
+    "thor (marvel hero)",
+    "mickey mouse",
+    "spider man",
+    "batman",
+    "superman",
+    "Wonder Woman",
+    "Aquaman",
+    "colgate",
   ]);
 
   let [currentWord, setCurrentWord] = useState("");
