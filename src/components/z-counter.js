@@ -4,7 +4,7 @@ const ZCounter = ({ numOfZayac, setNumOfZayac }) => {
   return (
     <React.Fragment>
       <div className="container">
-        <div className="row align-items-center mx-auto">
+        <div className="row align-items-center">
           <button
             onClick={() => (numOfZayac > 0 ? setNumOfZayac(numOfZayac - 1) : 0)}
             className="btn btn-outline-primary w-25 ml-5 "

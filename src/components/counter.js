@@ -4,7 +4,7 @@ const Counter = ({ numOfPlayers, setNumOfPlayers }) => {
   return (
     <React.Fragment>
       <div className="container">
-        <div className="row align-items-center mx-auto">
+        <div className="row align-items-center">
           <button
             onClick={() =>
               numOfPlayers > 0 ? setNumOfPlayers(numOfPlayers - 1) : 0
