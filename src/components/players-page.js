@@ -66,7 +66,7 @@ const PlayersPage = ({
           <h4 className="bg-info border p-3 text-light">
             {showWord[playerNum - 1] === "zayac"
               ? `You are a SPY 🕵🏻‍♂️ `
-              : "The Secret word is : 🤐🤐🤐  " + showWord[playerNum - 1]}
+              : "The Secret word is : 🤐 " + showWord[playerNum - 1]}
           </h4>
           <img
             src={imgSecret}
@@ -75,7 +75,7 @@ const PlayersPage = ({
             className="rounded mt-5"
           />
           <button
-            className="btn btn-outline-primary d-block w-50 w-75 ml-5 mt-5"
+            className="btn btn-primary d-block w-50 w-75 ml-5 mt-5"
             onClick={(e) => {
               setIsAnswerShown(false);
               nextPlayer(e);
@@ -95,14 +95,6 @@ const PlayersPage = ({
           >
             Show the WORD
           </button>
-
-          {/* <button
-            className="btn btn-outline-primary d-block w-75 ml-5 mt-3"
-            onClick={nextPlayer}
-          >
-            {" "}
-            NEXT PLAYER{" "}
-          </button> */}
         </div>
       );
     }

@@ -72,6 +72,10 @@ const MainPage = () => {
     "Wonder Woman",
     "Aquaman",
     "colgate",
+    "Jackie Chan",
+    "Moloko",
+    "deputat (kyrgyz)",
+    "ghost",
   ]);
 
   let [currentWord, setCurrentWord] = useState("");
@@ -101,7 +105,7 @@ const MainPage = () => {
       <h3> The epic SPY Game</h3>
       <h2 className="mb-5 lg">🕵🏻‍🕵🏻‍♂🕵🏻‍♂️🕵🏻‍♂️🕵🕵🏻‍♂️🕵🏻‍♂️🕵🏻‍♂️</h2>
       <hr className="mb-5" />
-      <h5 className="mt-3 mb-4">Select the number of Players🥷🏻</h5>
+      <h5 className="mt-3 mb-4">Select the number of Players🤠</h5>
       <Counter numOfPlayers={numOfPlayers} setNumOfPlayers={setNumOfPlayers} />
       <hr className="my-5" />
       <h5 className="my-4">Select the number of spies🕵</h5>
