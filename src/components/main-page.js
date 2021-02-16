@@ -76,6 +76,11 @@ const MainPage = () => {
     "Moloko",
     "deputat (kyrgyz)",
     "ghost",
+    "Vaccine",
+    "vitamin D",
+    "koidun mayi (sheep's fat)",
+    "Big mac (Mc Donald's burger)",
+    
   ]);
 
   let [currentWord, setCurrentWord] = useState("");
