@@ -80,7 +80,15 @@ const MainPage = () => {
     "vitamin D",
     "koidun mayi (sheep's fat)",
     "Big mac (Mc Donald's burger)",
-    
+    "Crazy rich Asians (movie)",
+    "Santa Barbara (serial)",
+    "goroskop",
+    "python (snake)",
+    "tourism",
+    "keyboard",
+    "boss",
+    "nanny (nyanya)",
+    "HERMES (brand)",
   ]);
 
   let [currentWord, setCurrentWord] = useState("");

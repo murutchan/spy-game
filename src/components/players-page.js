@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import imgSecret from "./secret.jpg";
+import imgSecret from "./secret.png";
+import spy from "./spy.svg";
 import "./players.page.styles.css";
 
 const PlayersPage = ({
@@ -65,11 +66,11 @@ const PlayersPage = ({
         <div className=" player-page mt-5 ">
           <h4 className="bg-info border p-3 text-light">
             {showWord[playerNum - 1] === "zayac"
-              ? `You are a SPY 🕵🏻‍♂️ `
+              ? "You are a SPY 🕵🏻‍♂️"
               : "The Secret word is : 🤐 " + showWord[playerNum - 1]}
           </h4>
           <img
-            src={imgSecret}
+            src={showWord[playerNum - 1] === "zayac" ? spy : imgSecret}
             alt="secret"
             width="70%"
             className="rounded mt-5"
