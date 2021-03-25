@@ -65,9 +65,20 @@ const PlayersPage = ({
       return isAnswerShown ? (
         <div className=" player-page mt-5 ">
           <h4 className="bg-info border p-3 text-light">
-            {showWord[playerNum - 1] === "zayac"
-              ? "You are a SPY 🕵🏻‍♂️"
-              : "The Secret word is : 🤐 " + showWord[playerNum - 1]}
+            {showWord[playerNum - 1] === "zayac" ? (
+              "You are a SPY 🕵🏻‍♂️"
+            ) : (
+              <span>
+                {" "}
+                <span className="text-warning bg-white">
+                  {" "}
+                  The Secret word is : 🤐{" "}
+                </span>{" "}
+                <span className="display-4 mt-5">
+                  {showWord[playerNum - 1]}
+                </span>
+              </span>
+            )}
           </h4>
           <img
             src={showWord[playerNum - 1] === "zayac" ? spy : imgSecret}
