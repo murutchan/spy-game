@@ -5,7 +5,7 @@ import PlayersPage from "./players-page";
 import ZCounter from "./z-counter";
 
 const MainPage = () => {
-  const [wordsList, setWordsList] = useState([
+  const [wordsList] = useState([
     "google",
     "dallas",
     "Mr Joe biden",
