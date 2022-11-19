@@ -101,6 +101,7 @@ const MainPage = () => {
     let randomNum = Number(Math.floor(Math.random() * (wordsList.length - 1)));
 
     setCurrentWord(wordsList[randomNum]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   //START GAME BUTTON

@@ -31,9 +31,11 @@ const PlayersPage = ({
     randomPlayerList();
 
     setShowWord([...playerList.sort(() => Math.random() - 0.5)]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   //START A GAME BUTTON
+  //This comment was extra
   const startGame = () => {
     setIsPlayerShown(false);
   };
