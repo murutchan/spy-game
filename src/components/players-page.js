@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import imgSecret from "./secret.png";
-import spy from "./spy.svg";
+import spy from "./spy.jpeg"
 import "./players.page.styles.css";
 
 const PlayersPage = ({
