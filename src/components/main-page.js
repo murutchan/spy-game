@@ -9,7 +9,6 @@ const MainPage = () => {
     "google",
     "dallas",
     "Mr Joe biden",
-    "netflix",
     "tv show office",
     "grand canyon",
     "steve jobs",
